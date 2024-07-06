@@ -1,0 +1,189 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <title>Vasavi College of Engineering </title>
+
+    <script language="javascript" type="text/javascript">
+        function check(e) {
+            var keynum
+            var keychar
+            var numcheck
+            // For Internet Explorer
+            if (window.event) {
+                keynum = e.keyCode
+            }
+                // For Netscape/Firefox/Opera
+            else if (e.which) {
+                keynum = e.which
+            }
+            keychar = String.fromCharCode(keynum)
+            //List of special characters you want to restrict
+            if (keychar == "'" || keychar == "`" || keychar == "\"" || keychar == ";" || keychar == ":" || keychar == "+" || keychar == "=" || keychar == "*" || keychar == "&" || keychar == "^" || keychar == "%" || keychar == "$" || keychar == "#" || keychar == "@" || keychar == "!" || keychar == "~" || keychar == "." || keychar == ",") {
+
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+</script>
+    <script type="text/JavaScript">
+        function pagePrint() {
+            var divMyArea = document.getElementById('divPrintArea');
+            if (divMyArea.innerHTML != "")
+                window.open(",").document.write('<div id="print" style="font-family: tahoma, Arial, Helvetica, sans-serif; font-size: 8 px;">' + divMyArea.innerHTML + '</div>'); // +  '<input type=button onclick="window.print();" value=Print>');
+        }
+</script>
+
+
+    <script type="text/javascript">
+        function PrintPanel() {
+            var panel = document.getElementById("pnlContents");
+            var printWindow = window.open('', '', 'height=400,width=800');
+            printWindow.document.write('<html><head><title>DIV Contents</title>');
+            printWindow.document.write('</head><body >');
+            printWindow.document.write(panel.innerHTML);
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            setTimeout(function () {
+                printWindow.print();
+            }, 500);
+            return false;
+        }
+    </script>
+
+    <style type="text/css">
+    body { font-family:Arial; font-size:12px;}    
+    h1 { font-family:Arial; font-size:22px;}
+    </style>
+</head>
+    
+    <body bgcolor="#FAF0D8" topmargin="25px" leftmargin="0">  
+    <form method="post" action="./" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CBA3C9B3">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Gw66nsKZd1Udu9szCRo7wvWmUXKIW6LzMLTbw7rcb8LIjl/2NfCOXND2Y0YCsnrbgTMCd2V2EGnLKBGWHUF/2BReh3hrn4DxVfsaH58t6M5bNaRRpP09PmRT5J6DgLGIBXSNMm9tNKrYCyaG3AyT1wJ1oKh5Oo3RqMDR1TLnxRw=">
+</div>
+    <div id="pnlContents">
+	
+<center>
+    
+     
+    <div id="divPrintArea">
+    <table border="0" width="85%"><tbody><tr><td>
+    <p><span style="font-size:26px; font-weight:bold;">
+      Vasavi College of Engineering (Autonomous)</span>
+        <br><i style="line-height:1.3">Accredited By NAAC with  A++ Grade</i><br>
+        <i style="line-height:1.3">Affiliated to Osmania University and Approved by AICTE</i><br>
+
+       <i style="line-height:1.3">Ibrahimbagh, Hyderabad - 500031, Telangana State, India</i></p><br>
+            <h1> Result of B.E.&nbsp; II and VI - Semester Main &amp; Backlog Examinations, held in May-24/June-24</h1><p></p>
+    <table border="1" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber6" height="19">
+    <tbody><tr> <td width="100%" align="center" height="16" bgcolor="#FEFCF5"><b>
+         <font face="Arial" size="2">Enter  Hall Ticket No. :  
+         <input name="txtHTNO" type="text" value="1602-19-735-115" maxlength="15" id="txtHTNO" onkeypress="return check(event)">
+         
+         </font> </b></td>
+    </tr>
+
+         <tr><td width="100%" align="center">
+        <font face="verdana" size="2" color="#FF0000"><span id="lblMsg"></span></font></td>
+    </tr>
+
+    <tr><td width="100%" align="center">
+        <font face="verdana" size="2" color="#FF0000"><b> Please Enter 15 Digit Hall Ticket Number   </b></font></td>
+    </tr>
+    </tbody></table>
+
+    <br><br>
+<div id="Panel1">
+		
+      <table border="1" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber3"> 
+	              <tbody><tr> <td width="100%" colspan="4" align="center" bgcolor="#EDC987"> 
+	                <b><font face="Arial" size="2">Personal Details</font></b></td></tr>
+
+            <tr><td>Course</td>
+                <td>   <span id="lblCourse">Electronics and Communication  Engineering [ECE-BE]</span></td>
+            <td>Examination</td>
+                <td> May-24/June-24</td>
+            </tr>
+            <tr><td>Roll No</td>
+                <td><span id="lblRollNo">1602-19-735-115</span></td>
+            <td>Name</td>
+                <td>
+                    <span id="lblStudName">SWARGAM SRIKAR</span></td>
+            </tr>
+          <tr>
+              <td></td><td></td>
+          <td>Father's Name</td>
+                <td>
+                    <span id="lblFName">SWARGAM KRISHNAMURTHY</span></td>
+            </tr>
+        </tbody></table>
+            
+                         <div id="divResults"><table border="1" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber3"><tbody><tr> <td width="100%" colspan="7" align="center" bgcolor="#EDC987" height="12"><b> <font face="Arial" size="2">Marks Details</font></b></td></tr><tr><th>S.No.</th><th>Course Code</th><th>Course</th><th>Year</th><th>Semester</th><th>Course Credits</th><th>Grade Secured</th></tr><tr><td style="text-align:center;">1</td><td style="text-align:center;">U19PC710EC</td><td>ELECTRONIC CIRCUITS</td><td style="text-align:center; color:green;">1</td><td style="text-align:center; color:green;">2</td><td style="text-align:center; color:green;">3</td><td style="text-align:center; color:green;">B+</td></tr><tr><td style="text-align:center;">2</td><td style="text-align:center;">U19PC720EC</td><td>PROGRAM SOLVING FOR OBJECT ORIENTED</td><td style="text-align:center; color:green;">1</td><td style="text-align:center; color:green;">2</td><td style="text-align:center; color:green;">3</td><td style="text-align:center; color:green;">B</td></tr><tr><td style="text-align:center;">3</td><td style="text-align:center;">U19PE720EC</td><td>MICROPROCESSOR AND MICROCONTROLLER</td><td style="text-align:center; color:green;">3</td><td style="text-align:center; color:green;">6</td><td style="text-align:center; color:green;">3</td><td style="text-align:center; color:green;">C</td></tr><tr><td style="text-align:center;">4</td><td style="text-align:center;">U19PE790EC</td><td>ANALOG AND DIGITAL COMMUNICATION</td><td style="text-align:center; color:green;">3</td><td style="text-align:center; color:green;">6</td><td style="text-align:center; color:green;">3</td><td style="text-align:center; color:green;">B</td></tr></tbody></table></div>
+                    
+           
+            <br>
+       
+                       
+    
+
+         <table border="1" cellspacing="1" style="border-collapse: collapse" bordercolor="#111111" width="100%" id="AutoNumber3"> 
+	             <tbody><tr> <td width="100%" colspan="3" align="center" bgcolor="#EDC987"> <b><font face="Arial" size="2">Result</font></b></td>
+	              </tr>
+
+             
+               <tr>
+
+
+
+        <td width="35%"><span id="lblResult" style="color:green;font-size:Medium;font-weight:bold;">PASSED<br></span></td>
+                      <td width="25%" style="text-align:center">
+                           <input type="submit" name="btnPrint" value="Print" onclick="return PrintPanel();" id="btnPrint">
+                      </td>
+                      <td><span id="lblSGPa" style="font-size:Medium;font-weight:bold;">II(SGPA): 7.0 , VI(SGPA):6.67 <br></span></td></tr>
+       
+              <tr><td colspan="3" style="text-align:center;">  
+           <span id="lblCGPA" style="font-size:Medium;font-weight:bold;">Cumulative Grade Point Average (CGPA) : 7.02<br></span>
+       </td></tr>
+               <tr><td colspan="3">  
+           <span id="lblfinalcgpa" style="font-size:Medium;font-weight:bold;color:red;font-weight:bold;font-size:14px;"></span>
+       </td></tr>
+             <tr><td colspan="3" style="text-align:center;">  
+                     <span id="lblfisdata" style="font-size:Medium;font-weight:bold;color:red;font-weight:bold;font-size:14px;"> </span>
+     
+                
+                       <p style="color:red; font-weight:bold;font-size:14px;"><i>Note: Schedule for submission of revaluation/photocopy application:20.07.2024 To 23.07.2024 </i></p>
+           
+                 <p style="color:red;font-weight:bold;font-size:14px;"><i>This information is provided to the candidate on his/her online request and is only a prototype list</i></p>
+
+ 
+       </td></tr>
+
+
+              </tbody></table>
+          
+
+	</div>
+
+     </td>
+                </tr>
+
+            </tbody></table>
+
+        </div>
+    </center>
+        
+      <div>
+
+	</div>
+         
+</div>
+    </form>
+
+
+</body></html>
